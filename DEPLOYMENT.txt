@@ -1,0 +1,18 @@
+SHAHEEN TV - FULL FIX
+
+1. Extract this ZIP.
+2. Upload ALL extracted files and folders to the ROOT of your GitHub repository.
+   index.html must be in the repository root.
+3. Import the repository into Vercel.
+4. Framework Preset: Other
+5. Build Command: leave empty
+6. Output Directory: .
+7. Deploy and open the HTTPS URL.
+
+Do not open index.html directly from Android File Manager.
+The app loads public channel data from IPTV-org. Stream availability depends on
+the stream provider, region, browser, and whether the stream is still online.
+Only HTTPS streams are listed to avoid browser mixed-content blocking.
+
+
+API FIX: Data is loaded from https://iptv-org.github.io/api with a raw GitHub fallback. The obsolete Cloudflare Worker endpoint has been removed.
