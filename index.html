@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f111a">
+<title>Shaheen TV — Live Sports & Entertainment</title>
+<link id="faviconLink" rel="icon" href="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SPLASH LOADER -->
+<div id="loader" class="loader">
+  <div class="loader-image-slot">
+    <img id="splashLogoImg" src="" alt="Shaheen TV Logo"
+      onerror="this.style.display='none';this.parentNode.insertAdjacentHTML('beforeend','<div class=\'fallback-logo\'><i class=\'fa-solid fa-tv\'></i></div>')">
+  </div>
+  <div class="loader-text">Loading Shaheen TV...</div>
+  <div class="loader-dots"><span></span><span></span><span></span></div>
+</div>
+
+<!-- STICKY PLAYER -->
+<div class="player-wrapper">
+  <div class="player-section">
+    <div class="video-container">
+      <video id="video" playsinline controls></video>
+      <div class="brand-watermark">
+        <img id="watermarkImg" src="" alt="Shaheen TV">
+      </div>
+      <div id="ov">
+        <i class="fa-solid fa-circle-play" style="font-size:3rem;color:rgba(255,255,255,0.8);text-shadow:0 2px 10px rgba(0,0,0,0.5)"></i>
+        <p style="color:#fff;font-size:0.9rem;font-weight:700;text-shadow:0 2px 4px rgba(0,0,0,0.8)">Select a channel to play</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input id="search" type="search" placeholder="Search channels on Shaheen TV..." autocomplete="off">
+  </div>
+</div>
+
+<!-- COUNTRY BAR -->
+<div class="section-label"><i class="fa-solid fa-globe"></i> Choose Country</div>
+<div class="country-bar" id="countryBar"></div>
+
+<!-- CATEGORY FILTER PILLS -->
+<div class="cat-filter" id="catFilter"></div>
+
+<!-- CHANNEL LIST -->
+<div id="list" style="padding-bottom:30px;"></div>
+
+<!-- FOOTER -->
+<footer class="app-footer">
+  Created with <span class="heart">&#10084;</span> by
+  <a class="dev-link" id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer" title="Join Shaheen TV on WhatsApp">
+     Shaheen TV Developers <i class="fa-brands fa-whatsapp wa-icon"></i>
+  </a>
+  <span class="footer-line">&copy; 2025 Shaheen TV &mdash; All Rights Reserved</span>
+</footer>
+
+<div id="toast" role="status"></div>
+
+<!-- CONFIG FIRST -->
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
