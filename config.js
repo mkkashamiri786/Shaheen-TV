@@ -16,7 +16,7 @@ window.STV_CONFIG = {
     watermarkLogo: 'https://bit.ly/Shaheen-TV-logo',
 
     // Player ke background mein jo image dikhti hai (jab channel na chale)
-    playerBackground: 'https://bit.ly/Shaheen-TV-Img'
+    playerBackground: 'https://i.ibb.co/gZxTKwYK/file-000000003c488208a1c230687f88985b.png'
   },
 
   /* ---------- 🔗 LINKS ---------- */
