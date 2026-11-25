@@ -22,7 +22,7 @@ window.STV_CONFIG = {
   /* ---------- 🔗 LINKS ---------- */
   links: {
     // Footer mein WhatsApp channel link
-    whatsappChannel: 'https://chat.whatsapp.com/B7JSzVtZrNuBbSuhUwqV7U?s=cl&p=a&iam=2'
+    whatsappChannel: 'https://chat.whatsapp.com/B7JSzVtZrNuBbSuhUwqV7U'
   },
 
   /* ---------- ⚙️ SETTINGS ---------- */
