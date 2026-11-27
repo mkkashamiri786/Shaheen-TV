@@ -48,11 +48,8 @@
 </div>
 
 <!-- COUNTRY BAR -->
-<div class="section-label"><i class="fa-solid fa-globe"></i> Choose Country</div>
-<div class="country-bar" id="countryBar"></div>
-
-<!-- CATEGORY FILTER PILLS -->
-<div class="cat-filter" id="catFilter"></div>
+<div class="country-bar" id="countryBar" aria-label="Select country"></div>
+<div class="section-label" id="channelSectionTitle"><i class="fa-solid fa-layer-group"></i> Pakistan TV Channels</div>
 
 <!-- CHANNEL LIST -->
 <div id="list" style="padding-bottom:30px;"></div>
@@ -68,9 +65,13 @@
 
 <div id="toast" role="status"></div>
 
-<!-- CONFIG FIRST -->
-<script src="config.js"></script>
+<!-- HLS LIBRARY -->
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+
+<!-- APP CONFIG -->
+<script src="config.js"></script>
+
+<!-- MAIN APP -->
 <script src="app.js"></script>
 </body>
 </html>
