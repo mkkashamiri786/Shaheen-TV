@@ -1,40 +1,39 @@
-/* ============================================================
-   SHAHEEN TV — CONFIG FILE
-   ============================================================
-   Yahan se aap saari images aur WhatsApp link change kar sakte hain.
-   Sirf URL ke andar wala link badal dein — baaki kuch nahi chhedna.
-   ============================================================ */
+/* ============================================
+   SHAHEEN TV — CONFIGURATION FILE
+   Yahan se sab kuch easily change kar sakte ho
+   ============================================ */
 
 window.STV_CONFIG = {
 
-  /* ---------- 🖼️ IMAGES ---------- */
+  /* ========== IMAGES ========== */
   images: {
-    // Splash / Loader logo (sabse pehle jo dikhta hai)
     splashLogo: 'https://i.postimg.cc/VLqnPCkT/2719095-splash.png',
-
-    // Player ke upar-right corner mein chhota watermark logo
     watermarkLogo: 'https://bit.ly/Shaheen-TV-logo',
-
-    // Player ke background mein jo image dikhti hai (jab channel na chale)
     playerBackground: 'https://i.ibb.co/gZxTKwYK/file-000000003c488208a1c230687f88985b.png'
   },
 
-  /* ---------- 🔗 LINKS ---------- */
+  /* ========== WHATSAPP / LINKS ========== */
   links: {
-    // Footer mein WhatsApp channel link
     whatsappChannel: 'https://chat.whatsapp.com/B7JSzVtZrNuBbSuhUwqV7U'
   },
 
-  /* ---------- ⚙️ SETTINGS ---------- */
+  /* ========== SETTINGS ========== */
   settings: {
-    // Splash screen kitne millisecond dikhe (5000 = 5 seconds)
-    splashDuration: 5000,
+    splashDuration: 5000
+  },
 
-    // Default country (agar saved na ho)
-    defaultCountry: 'Pakistan',
-
-    // API base URL (mat badalna jab tak API change na ho)
-    apiBase: 'https://ft-tv.sheryarabbasi10044.workers.dev/ft/api'
-  }
+  /* ========== API ENDPOINTS (COUNTRIES) ========== */
+  countries: [
+    {
+      name: 'Pakistan',
+      flag: '🇵🇰',
+      url: 'https://ft-tv.sheryarabbasi10044.workers.dev/ft/api/pakistan'
+    },
+    {
+      name: 'India',
+      flag: '🇮🇳',
+      url: 'https://ft-tv.sheryarabbasi10044.workers.dev/ft/api/india'
+    }
+  ]
 
 };
